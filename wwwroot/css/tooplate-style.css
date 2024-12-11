@@ -372,6 +372,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
     align-items: center;
     > img {
       width: inherit;
+      max-width: 1200px;
     }
   }
 
