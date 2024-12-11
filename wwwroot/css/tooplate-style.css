@@ -31,18 +31,19 @@ https://www.tooplate.com/view/2119-gymso-fitness
   }
 
   :root {
-    --primary-color:        #f13a11;
-    --white-color:          #ffffff;
-    --dark-color:           #171819;
+    --primary-color:        #0c2745;
+    --white-color:          #0c2745;
+    --dark-color:           #ffffff;
     --about-bg-color:       #f9f9f9;
 
     --gray-color:           #909090;
     --link-color:           #404040;
-    --p-color:              #666262;
+    --p-color:              #ffffff;
 
     --base-font-family:     'Plain', sans-serif;
-    --font-weight-bold:     bold;
-    --font-weight-normal:   normal;
+    --font-weight-heavy:    800;
+    --font-weight-bold:     600;
+    --font-weight-normal:   400;
     --font-weight-light:    300;
     --font-weight-thin:     100;
 
@@ -270,8 +271,9 @@ https://www.tooplate.com/view/2119-gymso-fitness
   .navbar-brand {
     color: var(--white-color);
     font-size: var(--h3-font-size);
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-heavy);
     line-height: normal;
+    letter-spacing: 1px;
     padding-top: 0;
   }
 
@@ -363,13 +365,14 @@ https://www.tooplate.com/view/2119-gymso-fitness
   -----------------------------------------*/
 
   .hero {
-    background-image: url('../images/hero-bg.jpg');
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-    vertical-align: middle;
-    min-height: 100vh;
-    position: relative;
+    margin-top: 8em;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > img {
+      width: inherit;
+    }
   }
 
 
@@ -525,7 +528,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
   -----------------------------------------*/
 
   .webform input,
-  button#submit-button {
+  button#submit-button, button#submit-button1, button#submit-button2 {
     height: calc(2.25rem + 20px);
   }
 
@@ -539,7 +542,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
     border-color: var(--dark-color);
   }
 
-  button#submit-button {
+  button#submit-button, button#submit-button1, button#submit-button2 {
     background: var(--dark-color);
     border-color: transparent;
     color: var(--white-color);
@@ -547,7 +550,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
     transition: all 0.3s ease;
   }
 
-  button#submit-button:hover {
+button#submit-button:hover, button#submit-button1:hover, button#submit-button2:hover {
     background: var(--primary-color);
   }
 
@@ -571,8 +574,8 @@ https://www.tooplate.com/view/2119-gymso-fitness
   -----------------------------------------*/
 
   .site-footer {
-    border-top: 1px solid #efebeb;
-    padding: 3rem 0;
+    padding-top: 4em;
+    padding-bottom: 2rem;
   }
 
   .site-footer a {
