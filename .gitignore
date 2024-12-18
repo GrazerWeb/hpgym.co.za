@@ -4,9 +4,11 @@
 */**/.*
 .*/**/*
 .*/**/.*
-!.idea
-!wwwroot
 !.gitignore
+!.idea
+!.idea/**/*
+!wwwroot
+!wwwroot/**/*
 
 
 # Generated
